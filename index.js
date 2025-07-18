@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv"
 import cors from "cors"
+import db from "./utils/db.js";
 
 // cors- It’s a security feature in browsers that controls which websites can talk to each other.
 // const cors = require('cors');
@@ -17,8 +18,8 @@ app.use(cors({
 })
 );
 
-
-
+app.use(express.json()) // Think of it as a translator that converts JSON data from requests into JavaScript objects.
+app.use(express.urlencoded({ extended: true }));
 
 const port =  process.env.PORT || 4000;
 
@@ -35,6 +36,11 @@ app.get('/piyush', ( req,res)=> {
 
 console.log();
 
+
+// 
+db();
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
