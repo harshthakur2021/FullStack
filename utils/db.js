@@ -8,7 +8,7 @@ const db = () => {
   mongoose
     .connect(process.env.MONGO_URL)
     .then(() => {
-      console.log("connected to mongodb");
+      console.log("connected to mongodb success");
     })
     .catch((err) => {
       console.log("Error connecting to mongodb");
