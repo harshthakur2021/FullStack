@@ -18,7 +18,7 @@ app.use(cors({
 })
 );
 
-app.use(express.json()) // Think of it as a translator that converts JSON data from requests into JavaScript objects.
+app.use(express.json()) // Think of it as a translator that convert JSON data from requests into JavaScript objects.
 app.use(express.urlencoded({ extended: true }));
 
 const port =  process.env.PORT || 4000;
