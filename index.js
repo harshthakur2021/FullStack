@@ -6,6 +6,7 @@ import db from "./utils/db.js";
 // cors- It’s a security feature in browsers that controls which websites can talk to each other.
 // const cors = require('cors');
 // app.use(cors());
+// dotenv is a popular Node.js package that loads environment variables from a .env file into process.env
 
 
 dotenv.config()
