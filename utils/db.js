@@ -22,4 +22,4 @@ export default db;
 // 1.  Create a file named .env in your root folder and add your MongoDB URL:
 // 2. 3. Create MongoDB Connection File
 //   Create a file named db.js or database.js.
-// ✅ 4. Use the DB Function in Your Main App index.js.
+//  4. Use the DB Function in Your Main App index.js.
